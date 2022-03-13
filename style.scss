@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+// font-size: 15px;
+
+$Bright_orange: hsl(31, 77%, 52%);
+$Dark_cyan: hsl(184, 100%, 22%);
+$Very_dark_cyan: hsl(179, 100%, 13%);
+// paragraphs
+$Transparent_white: hsla(0, 0%, 100%, 0.75);
+//background, headings, buttons
+$Very_light_gray: hsl(0, 0%, 95%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 1502px;
+  main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $Very_light_gray;
+
+    .article-container {
+      margin: auto;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      width: 87%;
+      // justify-content: space-between;
+      // height: 1328px;
+      overflow: hidden;
+      article {
+        height: 440px;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &.sedan {
+          button {
+            color: $Bright_orange;
+          }
+          background-color: $Bright_orange;
+        }
+        &.suv {
+          button {
+            color: $Dark_cyan;
+          }
+          background-color: $Dark_cyan;
+        }
+        &.luxury {
+          button {
+            color: $Very_dark_cyan;
+          }
+          background-color: $Very_dark_cyan;
+        }
+
+        img {
+          width: 64px;
+          height: 40px;
+          // margin-bottom: 25px;
+        }
+        h1 {
+          font-family: "Big Shoulders Display", cursive;
+          color: $Very_light_gray;
+          font-size: 40px;
+          // height: 40px;
+          text-transform: uppercase;
+          font-weight: 700;
+          // margin-bottom: 25px;
+          align-items: center;
+          //   margin: 1em 0;
+        }
+        p {
+          font-family: "Lexend Deca", sans-serif;
+          color: $Transparent_white;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 1.7em;
+          // margin-bottom: 25px;
+          // margin: 0.5em 0;
+          // margin: 2em 0 0 0;
+        }
+        button {
+          width: 150px;
+          height: 50px;
+          border: none;
+          border-radius: 50px;
+          font-family: "Lexend Deca", sans-serif;
+          font-size: 15px;
+          background-color: $Very_light_gray;
+          &:hover {
+            background-color: transparent;
+            color: $Very_light_gray;
+            border: solid 2px $Very_light_gray;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    height: 6%;
+  }
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    width: 1440px;
+    height: 800px;
+    main {
+      width: 100%;
+      height: 100%;
+      .article-container {
+        flex-direction: row;
+        margin: 170px auto 130px;
+        width: 920px;
+        height: 500px;
+        article {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          //
+          // header {
+          //   // height: 30%;
+          //   justify-content: space-between;
+          // }
+        }
+      }
+    }
+  }
+}

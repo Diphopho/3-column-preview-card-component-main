@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 1502px;
+}
+
+body main {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f2f2f2;
+}
+
+body main .article-container {
+  margin: auto;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 87%;
+  overflow: hidden;
+}
+
+body main .article-container article {
+  height: 440px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .article-container article.sedan {
+  background-color: #e38826;
+}
+
+body main .article-container article.sedan button {
+  color: #e38826;
+}
+
+body main .article-container article.suv {
+  background-color: #006970;
+}
+
+body main .article-container article.suv button {
+  color: #006970;
+}
+
+body main .article-container article.luxury {
+  background-color: #004241;
+}
+
+body main .article-container article.luxury button {
+  color: #004241;
+}
+
+body main .article-container article img {
+  width: 64px;
+  height: 40px;
+}
+
+body main .article-container article h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: #f2f2f2;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .article-container article p {
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7em;
+}
+
+body main .article-container article button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  background-color: #f2f2f2;
+}
+
+body main .article-container article button:hover {
+  background-color: transparent;
+  color: #f2f2f2;
+  border: solid 2px #f2f2f2;
+  cursor: pointer;
+}
+
+body footer {
+  height: 6%;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    width: 1440px;
+    height: 800px;
+  }
+  body main {
+    width: 100%;
+    height: 100%;
+  }
+  body main .article-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 170px auto 130px;
+    width: 920px;
+    height: 500px;
+  }
+  body main .article-container article {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+/*# sourceMappingURL=style.css.map */
